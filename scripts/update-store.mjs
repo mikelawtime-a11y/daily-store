@@ -1,6 +1,6 @@
 import fs from "node:fs/promises";
 
-const url = "https://jsonplaceholder.typicode.com/todos/5";
+const url = "https://jsonplaceholder.typicode.com/todos/7";
 
 const res = await fetch(url, { headers: { Accept: "application/json" } });
 if (!res.ok) throw new Error(`Fetch failed: ${res.status} ${res.statusText}`);
