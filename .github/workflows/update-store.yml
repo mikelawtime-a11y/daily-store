@@ -1,9 +1,9 @@
-name: Update store.json every 15 minutes
+name: Update store.json every 6 minutes
 
 on:
   workflow_dispatch: {}
   schedule:
-    - cron: "3-59/15 * * * *"   # every 15 min, offset to reduce delays
+    - cron: "*/6 * * * *"
 
 permissions:
   contents: write
